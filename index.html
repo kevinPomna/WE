@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Serie y película favorita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mis series y películas favoritas</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#reserva">Reserva</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#historial">Historial</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>¡Hola! Este es el sitio web dedicado a mis series y películas favoritas.</p>
+    </section>
+    
+    <section id="reserva">
+      <h2>Haz una reserva</h2>
+      <form id="reservaForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        
+        <label for="fecha">Fecha de reserva:</label>
+        <input type="date" id="fecha" required>
+        
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+    <h2>Galería de imágenes</h2>
+    <section id="galeria">  
+        <br>
+        <br>
+      <div class="imagen">
+        <img src="Dragon2.jpg" alt="Imagen 1">
+      </div>
+      <div class="imagen">
+        <img src="super.jpg" alt="Imagen 2">
+      </div>
+      <div class="imagen">
+        <img src="simson.jpg" alt="Imagen 3">
+      </div>
+    </section>
+    
+    <section id="historial">
+      <h2>Historial de reservas</h2>
+      <ul id="historialReservas"></ul>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
